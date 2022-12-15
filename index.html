@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<!-- 
+
+Program:  index.html
+Author:   Kip King
+Creation: 13 December 2022
+Revised:  18 December 2022
+
+Description:
+
+This html file presents a single page with multiple slideshows for my Final Project for the RISD 2022_CE_FA Photography II: Advanced Critique (Part B) course with Lindsay Elgin.
+
+Source:
+
+I modified the code for Multiple Slideshows on the Same Page at
+https://www.w3schools.com/w3css/w3css_slideshow.asp
+
+-->
+
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kip's Final Project</title>
+
+
+<!--     How to Add Another Slideshow
+
+1) Create another class mySlidesn inside a slideshow-container
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="images/image_01.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/image_02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/image_03.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides( 1, 0)">&#10095;</a>
+</div>
+
+2) Change plusSlides(-1, 0) to plusSlides(-1, mySliden - 1)
+          plusSlides( 1, 0) to plusSlides(1, mySliden - 1) 
+		  
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a> 
+  <a class="next" onclick="plusSlides( 1, 0)">&#10095;</a>
+  
+where plusSlides(shift +/- n slides, index of mySlides in slideshow-container)
+  
+3) Add .mySlidesn to 
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
+
+4) Add showSlides(1, n-1) to list of
+
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+
+where showSlides(first slide to display, element of slideshow-container to display)
+
+-->
+
+<style>
+
+h1 {text-align:center; color:black; font-family:sans-serif;}
+h2 {text-align:center; color:black; font-family:sans-serif;}
+h3 {text-align:center; color:black; font-family:sans-serif; font-style: italic}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+ 
+</style>
+</head>
+
+<body>
+
+<h1>FINAL PROJECT</h1>
+
+<h3> <a href="#Kip">Kip</a> ~ 
+     <a href="#Lindsay">Lindsay</a> ~ 
+	 <a href="#Zixi">Zixi</a> ~ 
+	 <a href="#Nadine">Nadine</a>
+</h3>
+
+<br>
+
+<h2 id="Kip">Kip</h2>
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="images/image_01.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/image_02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/image_03.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides( 1, 0)">&#10095;</a> 
+</div>
+
+<h2><a href="#Top">Top</a></h2>
+
+
+<br><br>
+<h2 id="Lindsay">Lindsay</h2>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="images/image_03.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/image_04.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/image_06.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides2">
+    <img src="images/image_10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/image_11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/image_12.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides2">
+    <img src="images/image_13.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/image_14.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/image_15.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides2">
+    <img src="images/image_19.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides( 1, 1)">&#10095;</a>
+</div>
+
+<h2> <a href="#Top">Top</a></h2>
+
+<br><br>
+<h2 id="Zixi">Zixi</h2>
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="images/image_01.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="images/image_02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="images/image_03.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides3">
+    <img src="images/image_05.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="images/image_08.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="images/image_10.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides3">
+    <img src="images/image_13.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="images/image_14.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="images/image_15.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides3">
+    <img src="images/image_19.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides( 1, 2)">&#10095;</a>
+</div>
+
+<h2> <a href="#Top">Top</a></h2>
+
+<br><br>
+<h2 id="Nadine">Nadine</h2>
+<div class="slideshow-container">
+  <div class="mySlides4">
+    <img src="images/image_03.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="images/image_04.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="images/image_05.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides4">
+    <img src="images/image_08.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="images/image_10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="images/image_13.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides4">
+    <img src="images/image_14.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="images/image_15.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="images/image_16.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides4">
+    <img src="images/image_18.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+  <a class="next" onclick="plusSlides( 1, 3)">&#10095;</a>
+</div>
+
+<h2> <a href="#Top">Top</a></h2>
+
+<br>
+
+<!-- In the following script:
+
+    slideIndex = [1,1,1,1] = first slide to show for slideshows
+    n  = slide number within mySlides
+    no = index of mySlidesn within slideshow-container
+    slideId = ["mySlides1", "mySlides2", ... "mySlidesn"]
+    showSlides(1, no) = show first slide (1) in no slideshow
+
+-->
+
+<script>
+
+let slideIndex = [1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 
